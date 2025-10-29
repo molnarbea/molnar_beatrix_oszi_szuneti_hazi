@@ -1,0 +1,105 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #531c08;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "h h h"
+    "n ar as"
+    "f f f"
+    ;
+}
+header{
+    grid-area: h;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header>h1{
+    background-image: url(kepek/hatter.jpg);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    height: 100px;
+    background-size: cover;
+    padding-top: 50px;
+    text-shadow: 3px 3px 7px black;
+    border:solid black 3px;
+}
+nav{
+    grid-area: n;
+    border:solid black 3px;
+    height: 800px;
+    width: 300px;
+    position: fixed;
+    top: 153px;
+    left: 0px;
+    background-color: #411001;
+}
+nav>a{
+    display: block;
+    text-align: center;
+    border:solid black 3px;
+    padding: 15px;
+    margin: 20px;
+    text-decoration: none;
+    background-color: #411001;
+}
+nav>a:hover{
+    background-color: black;
+}
+nav>a.current{
+    background-color: black;
+    color: blue;
+}
+article{
+    grid-area: ar;
+    position: fixed;
+    top: 200px;
+    left: 350px;
+    width: 800px;
+}
+article>h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+}
+article>p{
+    text-align: justify;
+}
+aside{
+    grid-area: as;position: fixed;
+    top: 250px;
+    right: 125px;
+}
+aside>img{
+    height: 500px;
+    width: auto;
+    border:solid black 3px;
+    border-radius: 5%;
+}
+footer{
+    grid-area: f;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer>p{
+    background-image: url(kepek/hatter.jpg);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    background-size: cover;
+    padding-top: 25px;
+    text-shadow: 3px 3px 7px black;
+    border:solid black 3px;
+}
